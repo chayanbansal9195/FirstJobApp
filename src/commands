@@ -1,0 +1,4 @@
+./mvnw spring-boot:build-image "-Dspring-boot.build-image.imageName=chayanbansal496/firstJobApp"
+docker push chayanbansal496/firstjobapp
+docker run -d -p 8080:8080 chayanbansal496/firstjobapp
+docker logs ea4bc83b4f05ae64035cf19d7a3e0284c301102cc7e3aa599d26473f74b405e3
